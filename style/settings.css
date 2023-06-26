@@ -1,0 +1,473 @@
+.content {
+  background-color: #f6f6f6;
+}
+
+.account-settings {
+  margin: 20px 0px;
+  display: flex;
+  column-gap: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/*  */
+h2.section-title {
+  font-size: 18px;
+}
+
+.account-settings .settings-nav {
+  padding: 20px 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  flex-basis: 25%;
+}
+
+.account-settings .settings-nav ul {
+  position: sticky;
+  top: 120px;
+}
+
+.account-settings .settings-nav ul li {
+  list-style-type: none;
+  margin: 40px 0px;
+  width: 100%;
+}
+
+.account-settings .settings-nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+}
+
+.account-settings .settings-nav ul li a i {
+  margin-right: 7px;
+}
+
+.account-settings .settings-nav ul li a:hover {
+  color: #81a969;
+  background-color: rgba(129, 169, 105, 0.3);
+  padding: 15px 30px;
+  border-radius: 100vmax;
+}
+
+/*  */
+
+.account-settings .settings {
+  padding: 20px;
+  flex-basis: 75%;
+}
+
+.account-settings .settings .account-details {
+  margin: 30px 0px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-settings .settings .account-details .profile {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.account-settings .settings .account-details .profile .profile-picture {
+  width: 70px;
+  height: 70px;
+}
+
+.account-settings .settings .account-details .profile .profile-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.account-settings .settings .account-details .profile .profile-info h2.profile-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.account-settings .settings .account-details .profile .profile-info span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.account-settings .settings .account-details .edit a {
+  text-decoration: none;
+}
+
+.account-settings .settings .account-details .edit a>h4 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100vmax;
+  padding: 10px 20px;
+}
+
+.account-settings .settings .account-details .edit a>h4 i {
+  margin-left: 5px;
+}
+
+/*  */
+
+.account-settings .settings .personal-information,
+.account-settings .settings .security,
+.account-settings .settings .notification,
+.account-settings .settings .billing {
+  margin: 30px 0px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.account-settings .settings .personal-information .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-settings .settings .personal-information .title a {
+  text-decoration: none;
+}
+
+.account-settings .settings .personal-information .title a>h4 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100vmax;
+  padding: 10px 20px;
+}
+
+.account-settings .settings .personal-information .title a>h4 i {
+  margin-left: 5px;
+}
+
+.account-settings .settings .personal-information .information {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+
+.account-settings .settings .personal-information .information .col {
+  flex-basis: 50%;
+}
+
+.account-settings .settings .personal-information .information .col .field {
+  margin: 20px 0px;
+}
+
+.account-settings .settings .personal-information .information .col .field h4.info {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.account-settings .settings .personal-information .information .col .field h4.info-about {
+  font-weight: 500;
+}
+
+/*  */
+.account-settings .settings .security h4 {
+  font-weight: 500;
+  margin: 20px 0px 10px 0px;
+}
+
+.account-settings .settings .security label {
+  margin: 20px 0px 5px 0px;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.account-settings .settings .security input {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.account-settings .settings .security input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #81a969;
+}
+
+.account-settings .settings .security a {
+  display: block;
+  width: max-content;
+  margin: 20px 0px;
+  text-decoration: none;
+  background-color: #81a969;
+  padding: 14px 40px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  outline: 1px solid #81a969;
+  transition: all .1s ease-in-out;
+}
+
+.account-settings .settings .security a:hover {
+  outline-offset: 3px;
+}
+
+/*  */
+.account-settings .settings .notification .notification-title {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-settings .settings .notification .notification-title ul li {
+  list-style: none;
+}
+
+.account-settings .settings .notification .notification-title ul li h4 {
+  font-size: 20px;
+}
+
+.account-settings .settings .notification .notification-title ul li p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  max-width: 60%;
+}
+
+/* The switch - the box around the slider */
+.account-settings .settings .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.account-settings .settings .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+.account-settings .settings .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.account-settings .settings .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.account-settings .settings input:checked+.slider {
+  background-color: #2196F3;
+}
+
+.account-settings .settings input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.account-settings .settings input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.account-settings .settings .slider.round {
+  border-radius: 34px;
+}
+
+.account-settings .settings .slider.round:before {
+  border-radius: 50%;
+}
+
+/* OUR PLANS */
+main .our-plans .container {
+  padding: 0px;
+}
+
+.our-plans .container .plans {
+  display: flex;
+  column-gap: 30px;
+  margin: 30px auto;
+}
+
+.our-plans .container .plans .col {
+  flex-basis: 50%;
+}
+
+.our-plans .container .plans .basic {
+  background-color: #f7f5f4;
+  border-radius: 9px;
+  padding: 20px;
+}
+
+.our-plans .container .plans .basic h3.tag {
+  background-color: #e98d83;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 100vmax;
+  font-size: 14px;
+}
+
+.our-plans .container .plans .basic ul {
+  margin: 30px 0px;
+}
+
+.our-plans .container .plans .basic ul li,
+.our-plans .container .plans .pro ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 20px 0px;
+}
+
+.our-plans .container .plans .basic ul li h4 {
+  color: #333;
+  font-weight: 500;
+}
+
+.our-plans .container .plans .basic h2,
+.our-plans .container .plans .pro h2 {
+  margin: 15px 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.our-plans .container .plans .basic h2>span.price,
+.our-plans .container .plans .pro h2>span.price {
+  font-weight: 800;
+}
+
+.our-plans .container .plans .basic button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #e98d83;
+  padding: 14px 20px;
+  border-radius: 100vmax;
+  font-size: 14px;
+  margin: 20px 0px;
+}
+
+.our-plans .container .plans .basic button>a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.our-plans .container .plans .pro {
+  background-color: #e2eee8;
+  border: 1px solid #000;
+  border-radius: 9px;
+  padding: 20px;
+  position: relative;
+}
+
+.our-plans .container .plans .pro .selected {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  color: #000;
+}
+
+.our-plans .container .plans .pro .selected i {
+  font-size: 22px;
+}
+
+.our-plans .container .plans .pro h3.tag {
+  background-color: #6cb094;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 100vmax;
+  font-size: 14px;
+}
+
+.our-plans .container .plans .pro ul {
+  margin: 30px 0px;
+}
+
+
+.our-plans .container .plans .pro ul li h4 {
+  color: #333;
+  font-weight: 500;
+}
+
+.our-plans .container .plans .pro button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #6cb094;
+  padding: 14px 20px;
+  border-radius: 100vmax;
+  font-size: 14px;
+  margin: 20px 0px;
+}
+
+.our-plans .container .plans .pro button>a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.account-settings .settings .billing .invoice:nth-child(6) {
+  margin: 14px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-settings .settings .billing .invoice {
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.account-settings .settings .billing .row-amount {
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.account-settings .settings .billing .invoice .name,
+.account-settings .settings .billing .invoice .col {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.account-settings .settings .billing .invoice .name input,
+.account-settings .settings .billing .invoice .col input {
+  width: 15px;
+  height: 15px;
+}
+
+.account-settings .settings .billing .invoice h5 {
+  font-size: 14px;
+}
+
+.account-settings .settings .billing .invoice h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.account-settings .settings .billing .invoice h3.amount {
+  color: rgba(0, 0, 0, 0.6);
+}

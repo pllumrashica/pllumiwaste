@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/fonts.css">
+  <link rel="stylesheet" href="./style/dashboard.css">
+  <link rel="stylesheet" href="./style/payments.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <title>Pllumi Waste | Pagesat</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
+      </div>
+
+      <div class="bell">
+        <div class="bell-notify"></div>
+        <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
+          <span class="popuptext" id="myPopup">
+            <ul>
+              <li>
+                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni faturën</a></h1>
+              </li>
+
+              <li>
+                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mobile-side-bar">
+      <div class="fixed">
+        <div class="col">
+          <a href="dashboard.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </div>
+    
+        <div class="col">
+          <a href="schedule.html">
+            <i class="fa-solid fa-clock"></i>
+          </a>
+        </div>
+    
+        <div class="col mobile-active">
+          <a href="payments.html">
+            <i class="fa-solid fa-money-bill-wave"></i>
+          </a>
+        </div>
+    
+        <div class="col">
+          <a href="settings.html">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+        </div>
+    
+        <div class="col">
+          <a href="login.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="side-bar">
+      <div class="container">
+        <ul>
+          <a href="dashboard.html">
+            <li><i class="fa-solid fa-house"></i>Kryefaqja</li>
+          </a>
+          <a href="schedule.html">
+            <li><i class="fa-solid fa-clock"></i>Orari</li>
+          </a>
+          <a href="#">
+            <li class="active"><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
+          </a>
+          <a href="settings.html">
+            <li><i class="fa-solid fa-gear"></i>Cilësimet</li>
+          </a>
+          <a href="login.html">
+            <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="payments-checkout">
+          <div class="payment">
+            <h4>Transaksionet</h4>
+
+            <h3 class="month-title">1 Qershor,2023</h3>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Qershor , 2023 në orën 13:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <h3 class="month-title">1 Maj,2023</h3>
+
+            <div class="month-payment payed">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">5 Maj , 2023 në orën 15:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-plus">+ &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Maj , 2023 në orën 11:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <h3 class="month-title">1 Prill,2023</h3>
+
+            <div class="month-payment payed">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">3 Prill , 2023 në orën 19:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-plus">+ &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Prill , 2023 në orën 11:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <h3 class="month-title">1 Mars,2023</h3>
+
+            <div class="month-payment payed">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">10 Mars , 2023 në orën 15:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-plus">+ &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Mars , 2023 në orën 11:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <h3 class="month-title">1 Shkurt,2023</h3>
+
+            <div class="month-payment payed">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">2 Shkurt , 2023 në orën 19:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-plus">+ &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Shkurt , 2023 në orën 11:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <!--  -->
+            <h3 class="month-title">1 Janar,2023</h3>
+
+            <div class="month-payment payed">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">7 Janar , 2023 në orën 20:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-plus">+ &euro; 4.50</h2>
+              </div>
+            </div>
+
+            <div class="month-payment">
+              <div class="about">
+                <div class="company">
+                  <img src="./imgs/pllumi-icon.jpg" alt="Pllumi Waste Icon">
+                </div>
+
+                <div class="about-company">
+                  <h2 class="about-title">Pages Mujore</h2>
+
+                  <p class="about-date">1 Janar , 2023 në orën 11:00</p>
+                </div>
+              </div>
+
+              <div class="spent">
+                <h2 class="money-minus">- &euro; 4.50</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout">
+            <h4>Paguaj</h4>
+
+            <h3 class="monthly-pay">Menyrat e pageses</h3>
+
+            <div class="check-out-methods">
+              <a href="#">
+                <div class="col active">
+                  <div class="icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="col">
+                  <div class="icon">
+                    <i class="fa-brands fa-google-pay"></i>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="col">
+                  <div class="icon">
+                    <i class="fa-brands fa-paypal"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="select-your-card">
+              <h4>Zgjidhni kartën tuaj</h4>
+
+              <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="your-card">
+              <div class="card-img">
+                <img src="./imgs/credit-card-bg.png" alt="Credit Card Background">
+
+                <div class="card-content">
+                  <h2 class="card-name">Mr. Pellumb Rashica</h2>
+
+                  <h3 class="card-number">1234</h3>
+
+                  <h3 class="card-date">03/27</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="total">
+              <h4>Totali</h4>
+
+              <h4>&euro;4.50 <i class="fa-solid fa-angle-up"></i></h4>
+            </div>
+
+            <div class="pay-now">
+              <a href="payment-success.html">Paguaj Tani</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

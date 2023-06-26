@@ -1,0 +1,225 @@
+main .content .container .recycle-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: url(../imgs/abstract-green-nature-blurred-gr.jpg), no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+main .content .container .recycle-card .row-inside {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .content .container .recycle-card .row-inside .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content .container .recycle-card .row-inside .col h2 {
+  color: #fff;
+}
+
+main .content .container .recycle-card .row-inside .col>.center {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .content .container .recycle-card .row-inside .col>.center input {
+  background: none;
+  border: none;
+  width: 17px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+main .content .container .recycle-card .row-inside .col p {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+main .content .container .recycle-card input[type="range"] {
+  width: 100%;
+  margin: 20px 0px;
+  border: none;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #f9fcfd;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  margin-top: -6px;
+  /* Centers thumb on the track */
+  background-color: #dbf65b;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #dbf65b;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #c9cecf;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #dbf65b;
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #dbf65b;
+  outline-offset: 0.125rem;
+}
+
+/*  */
+
+main .content .container .sorting .row-inside {
+  display: flex;
+  gap: 20px 20px;
+  margin-top: 20px;
+}
+
+main .content .container .sorting .row-inside .col.active {
+  flex-basis: 25%;
+  padding: 20px 0px;
+  background: url(../imgs/abstract-green-nature-blurred-gr.jpg), no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  transition: all 1s ease-in-out;
+  border: none;
+}
+
+main .content .container .sorting .row-inside .col.active a {
+  color: #fff;
+}
+
+main .content .container .sorting .row-inside .col {
+  flex-basis: 25%;
+  padding: 20px 0px;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  transition: all 1s ease-in-out;
+  border: 2px solid #5eff00;
+  min-height: 200px;
+}
+
+main .content .container .sorting .row-inside .col:hover {
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #5eff00;
+}
+
+main .content .container .sorting .row-inside .col:hover>.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+main .content .container .sorting .row-inside .col:hover>a {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+main .content .container .sorting .row-inside .col .fade {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .content .container .sorting .row-inside .col a {
+  text-decoration: none;
+  background: none;
+  color: #000;
+  letter-spacing: 1.5px;
+  font-size: 26px;
+  font-weight: 900;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+main .content .container .sorting .row-inside .col a>i {
+  margin-left: 8px;
+}
+
+main .content .container .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+main .content .container .btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vmax;
+  background-color: #84AB6D;
+}

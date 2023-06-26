@@ -1,0 +1,38 @@
+.hero-banner h1,
+.hero-banner p,
+.hero-banner h2 {
+    animation: backInLeft;
+    animation-duration: 1.2s;
+}
+
+.hero-banner .col button {
+    animation: backInLeft;
+    animation-duration: 1.2s;
+}
+
+.hero-banner .col:last-child img {
+    animation: backInRight;
+    animation-duration: 1.2s;
+}
+
+.latest-news .container ul {
+    animation: bounceInDown;
+        animation-duration: 1.2s;
+}
+
+.animate__bounceInDown {
+    animation: bounceInDown;
+    animation-duration: 1.2s;
+}
+
+.news .col:first-child,
+.contact .container .row .col:first-child {
+    animation: backInLeft;
+        animation-duration: 1.2s;
+}
+
+.news .col:last-child,
+.contact .container .row .col:last-child {
+    animation: backInRight;
+    animation-duration: 1.2s;
+}

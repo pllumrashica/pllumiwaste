@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/fonts.css">
+  <link rel="stylesheet" href="./style/recycling-categories.css">
+  <link rel="stylesheet" href="./style/dashboard.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <title>Pllumi Waste | Reciklo</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
+      </div>
+
+      <div class="bell">
+        <div class="bell-notify"></div>
+        <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
+          <span class="popuptext" id="myPopup">
+            <ul>
+              <li>
+                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni
+                    faturën</a></h1>
+              </li>
+
+              <li>
+                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="side-bar">
+      <div class="container">
+        <ul>
+          <a href="recycle.html">
+            <li><i class="fa-solid fa-sort"></i>Renditja</li>
+          </a>
+          <a href="#">
+            <li class="active"><i class="fa-regular fa-circle-check"></i>Përpunimi</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-newspaper"></i>Lajmet</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-user my-account"></i>Llogaria ime</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-screwdriver-wrench"></i>Mjetet</li>
+          </a>
+          <a href="#">
+            <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="recycle-card">
+
+          <div class="row-inside">
+            <div class="col">
+              <h2 class="kilos"><span id="output">3</span> kg</h2>
+              <p>Plastik</p>
+            </div>
+
+            <div class="col">
+              <div class="center">
+                <input class="price" type="text" id="rangeValue1" value="3" step="3" min="1" max="12"
+                  onchange="slideValue('slide1', 'rangeValue1');">€
+              </div>
+              <p>Të ardhura</p>
+            </div>
+          </div>
+
+          <input type="range" id="slide1" min="1" max="5" step="1" onchange="changeValue(this.value)"
+            oninput="printValue('slide1', 'rangeValue1')">
+        </div>
+
+        <div class="sorting">
+          <div class="row-inside">
+            <div class="col active">
+              <div class="fade"></div>
+              <a href="#" class="category-name">Plastika</a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="category-name">Xham</a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="category-name">Metal</a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="category-name">Letra</a>
+            </div>
+          </div>
+
+          <div class="row-inside">
+            <div class="col">
+              <a href="#" class="category-name">Të tjera<i class="fa-solid fa-circle-plus"></i></a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="#">Tjetra</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+    let output = document.getElementById('output');
+    function changeValue(newVal) {
+      output.innerHTML = newVal;
+    }
+
+    function printValue(sliderID, spanbox) {
+      var x = document.getElementById(spanbox);
+      var y = document.getElementById(sliderID);
+      x.value = y.value;
+    }
+    function slideValue(sliderID, spanbox) {
+      var x = document.getElementById(spanbox);
+      var y = document.getElementById(sliderID);
+      y.value = parseInt(x.value);
+    }
+
+    window.onload = function () { printValue('slide1', 'rangeValue1'); }
+  </script>
+</body>
+
+</html>

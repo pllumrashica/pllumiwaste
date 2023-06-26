@@ -1,0 +1,487 @@
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+
+header .container .logo {
+  width: 100px;
+}
+
+header .container .logo a {
+  text-decoration: none;
+}
+
+header .container .logo a>img {
+  width: 100%;
+}
+
+header .container ul.nav-items {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+header .container ul.nav-items li {
+  list-style: none;
+  cursor: pointer;
+}
+
+header .container ul.nav-items li.active>a {
+  color: #81a969;
+}
+
+header .container ul.nav-items li a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .container ul.nav-items li:hover {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #81a969;
+  transition: 0.1s ease-in-out;
+}
+
+header .container ul.nav-items li:hover>a {
+  color: #81a969;
+  transition: 0.1s ease-in-out;
+}
+
+header .container .buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+header .container .buttons button:first-child {
+  position: relative;
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #9dcd5a;
+  z-index: 10;
+  overflow: hidden;
+}
+
+header .container .buttons button:first-child>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .container .buttons button:first-child>a>i {
+  margin-right: 6px;
+  transform: rotate(0deg);
+  animation: rotate360 6s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header .container button:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 101%;
+  background-color: #000;
+  color: #fff;
+  animation: fill 0.5s linear;
+  z-index: -1;
+  display: none;
+}
+
+header .container button:first-child:hover::before {
+  display: block;
+}
+
+/* Button Last Switch */
+header .container .buttons button:last-child {
+  position: relative;
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #81a969;
+  z-index: 10;
+  overflow: hidden;
+}
+
+header .container .buttons button:last-child>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .container .buttons button:last-child>a>i {
+  margin-right: 6px;
+  transform: rotateY(45deg);
+  animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(45deg);
+  }
+
+  to {
+    transform: rotateY(225deg);
+  }
+}
+
+header .container button:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 101%;
+  background-color: #000;
+  color: #fff;
+  animation: fill 0.5s linear;
+  z-index: -1;
+  display: none;
+}
+
+header .container button:last-child:hover::before {
+  display: block;
+}
+
+nav {
+  display: none;
+}
+
+@media only screen and (max-width:767px) {
+  header {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --nav-bg: #03000e;
+    --main-clr: #81a969;
+    --nav-shadow: 0px 3px var(--main-clr);
+  }
+
+  nav {
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: var(--nav-shadow);
+  }
+
+
+  nav .logo {
+    width: 95px;
+    height: 55px;
+  }
+
+  nav .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav ul {
+    --padding: 20px;
+    --font-size: 17px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
+    overflow-y: hidden;
+    transition: 1s cubic-bezier(.68, -0.55, .27, 10.55);
+    box-shadow: var(--nav-shadow);
+  }
+
+  #nav.active {
+    background-color: #fff;
+  }
+
+  nav ul li {
+    padding: var(--padding);
+  }
+
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 1.7px;
+    border-radius: 99px;
+    background: var(--main-clr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  nav .menu {
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px;
+  }
+
+  nav .menu span {
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+    background: #333;
+    transition: 0.3s ease;
+    transform-origin: left;
+  }
+
+  nav .menu.active span {
+    background: var(--main-clr);
+  }
+
+  nav .menu.active span:nth-child(1) {
+    transform: rotate(40deg);
+  }
+
+  nav .menu span:nth-child(3) {
+    transform-origin: left;
+  }
+
+  nav .menu.active span:nth-child(3) {
+    transform: rotate(-40deg);
+  }
+
+  nav .menu.active span:nth-child(2) {
+    transform: scale(0);
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  nav ul {
+    --height: 0px;
+
+    flex-direction: column;
+    background: var(--nav-bg);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 56px;
+    height: var(--height);
+    transition: 1s cubic-bezier(.68, -0.55, .27, 1.55);
+  }
+
+  nav ul.active {
+    --height: calc((((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber));
+    /*   (Block Level Padding + The Font Size) * The Number of Children   */
+
+
+    transition: 1s ease;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-transform: capitalize;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .buttons button:first-child {
+    position: relative;
+    cursor: pointer;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #9dcd5a;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .buttons button:first-child>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .buttons button:first-child>a>i {
+    margin-right: 6px;
+    transform: rotate(0deg);
+    animation: rotate360 6s linear infinite;
+  }
+
+  @keyframes rotate360 {
+    from {
+      transform: rotate(45deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  button:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    background-color: #000;
+    color: #fff;
+    animation: fill 0.5s linear;
+    z-index: -1;
+    display: none;
+  }
+
+  button:first-child:hover::before {
+    display: block;
+  }
+
+  /* Button Last Switch */
+  .buttons button:last-child {
+    position: relative;
+    cursor: pointer;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #81a969;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .buttons button:last-child>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .buttons button:last-child>a>i {
+    margin-right: 6px;
+    transform: rotateY(45deg);
+    animation: rotateAnimation 3s linear infinite;
+  }
+
+  @keyframes fill {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      transform: rotateY(45deg);
+    }
+
+    to {
+      transform: rotateY(225deg);
+    }
+  }
+
+  button:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    background-color: #000;
+    color: #fff;
+    animation: fill 0.5s linear;
+    z-index: -1;
+    display: none;
+  }
+
+  button:last-child:hover::before {
+    display: block;
+  }
+}
