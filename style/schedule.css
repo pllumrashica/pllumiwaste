@@ -156,3 +156,21 @@ main .content .container .date-time .time .confirm-btn button:hover {
 main .content .container .date-time .time .confirm-btn button:hover a {
   color: #008000;
 }
+
+main .content .container .confirmed {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content .container .confirmed img {
+  width: 300px;
+}
+
+main .content .container .confirmed h4 {
+  font-size: 30px;
+  margin: 45px 0px;
+}

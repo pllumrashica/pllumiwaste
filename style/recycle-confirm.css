@@ -1,0 +1,135 @@
+main .content .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+main .side-bar {
+    z-index: 10;
+}
+
+main .content .container .loading-scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scene;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scene {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    60% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+main .content .container .loading {
+    z-index: 1;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+main .content .container h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    animation: scene;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+} 
+
+.bg-white {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    animation-name: show;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code {
+    width: 50%;
+    height: 60%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+    background-color: #fff;
+    background-image: url(../imgs/book-bg.6f629a1041e9fd9c6685.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code img {
+    width: 50%;
+}
+
+.qr-code h3 {
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    main .content {
+        height: 100vh;
+    }
+
+        .qr-code {
+            width: 90%;
+            padding: 50px;
+        }
+}

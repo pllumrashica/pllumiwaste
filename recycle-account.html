@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/fonts.css">    
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/recycle-account.css">
+    <link rel="stylesheet" href="./style/settings.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <title>Pllumi Waste | Cilësimet</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
+            </div>
+
+            <div class="bell">
+                <div class="bell-notify"></div>
+                <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
+                    <span class="popuptext" id="myPopup">
+                        <ul>
+                            <li>
+                                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni
+                                        faturën</a></h1>
+                            </li>
+
+                            <li>
+                                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mobile-side-bar">
+            <div class="fixed">
+                <div class="col">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="schedule.html">
+                        <i class="fa-solid fa-clock"></i>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="payments.html">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </a>
+                </div>
+
+                <div class="col mobile-active">
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="side-bar">
+            <div class="container">
+                <ul>
+                    <a href="recycle.html">
+                        <li><i class="fa-solid fa-sort"></i>Renditja</li>
+                    </a>
+                    <a href="recycling-categories.html">
+                        <li><i class="fa-regular fa-circle-check"></i>Përpunimi</li>
+                    </a>
+                    <a href="settings.html">
+                        <li class="active"><i class="fa-solid fa-user my-account"></i>Llogaria ime</li>
+                    </a>
+                    <a href="recycling-tools.html">
+                        <li><i class="fa-solid fa-screwdriver-wrench"></i>Mjetet</li>
+                    </a>
+                    <a href="recycle-login.html">
+                        <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Cilësimet e llogarisë</h2>
+
+                <div class="account-settings">
+
+                    <div class="settings">
+                        <h2 class="section-title">Profili Imë</h2>
+
+                        <div class="account-details">
+                            <div class="profile">
+                                <div class="profile-picture">
+                                    <img src="./imgs/Pllumrashica.jpg" alt="">
+                                </div>
+
+                                <div class="profile-info">
+                                    <h2 class="profile-name">Pëllumb Rashica</h2>
+
+                                    <span class="country">Vushtrri,Kosova</span>
+                                </div>
+                            </div>
+
+                            <div class="edit">
+                                <a href="#">
+                                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="personal-information">
+                            <div class="title">
+                                <h2 class="section-title">Informata personale</h2>
+
+                                <a href="#">
+                                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                                </a>
+                            </div>
+
+                            <div class="information">
+                                <div class="col">
+                                    <div class="field">
+                                        <h4 class="info">Emri</h4>
+
+                                        <h4 class="info-about">Pëllumb</h4>
+                                    </div>
+
+                                    <div class="field">
+                                        <h4 class="info">Email Adresa</h4>
+
+                                        <h4 class="info-about">pellumbrashica1@gmail.com</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="field">
+                                        <h4 class="info">Mbiemri</h4>
+
+                                        <h4 class="info-about">Rashica</h4>
+                                    </div>
+
+                                    <div class="field">
+                                        <h4 class="info">Numri i telefonit</h4>
+
+                                        <h4 class="info-about">+383 (45) 123-123</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="personal-information">
+                            <div class="title">
+                                <h2 class="section-title">Adresa</h2>
+
+                                <a href="#">
+                                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                                </a>
+                            </div>
+
+                            <div class="information">
+                                <div class="col">
+                                    <div class="field">
+                                        <h4 class="info">Shteti</h4>
+
+                                        <h4 class="info-about">Kosovë</h4>
+                                    </div>
+
+                                    <div class="field">
+                                        <h4 class="info">Kodi Postar</h4>
+
+                                        <h4 class="info-about">42000</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="field">
+                                        <h4 class="info">Qyteti</h4>
+
+                                        <h4 class="info-about">Vushtrri</h4>
+                                    </div>
+
+                                    <div class="field">
+                                        <h4 class="info">Numri i shtëpisë</h4>
+
+                                        <h4 class="info-about">38</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

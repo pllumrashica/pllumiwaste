@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="stylesheet" href="./style/recycle-confirm.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <title>Pllumi Waste | Reciklo</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"
+            ><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"
+          /></a>
+        </div>
+
+        <div class="bell">
+          <div class="bell-notify"></div>
+          <div class="popup" onclick="myFunction()">
+            <i class="fa-solid fa-bell"></i>
+            <span class="popuptext" id="myPopup">
+              <ul>
+                <li>
+                  <h1>
+                    Ju nuk keni paguar faturen tuaj qe 6 ditë.
+                    <a href="payments.html">Shikoni faturën</a>
+                  </h1>
+                </li>
+
+                <li>
+                  <h1>
+                    Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50
+                  </h1>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="mobile-side-bar">
+        <div class="fixed">
+          <div class="col">
+            <a href="recycle.html">
+              <i class="fa-solid fa-sort"></i>
+            </a>
+          </div>
+      
+          <div class="col mobile-active">
+            <a href="recycling-categories.html">
+              <i class="fa-solid fa-circle-check"></i>
+            </a>
+          </div>
+      
+          <div class="col">
+            <a href="recycle-settings.html">
+              <i class="fa-solid fa-user my-account"></i>
+            </a>
+          </div>
+      
+          <div class="col">
+            <a href="recycling-tools.html">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </a>
+          </div>
+      
+          <div class="col">
+            <a href="recycle-login.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="side-bar">
+        <div class="container">
+          <ul>
+            <a href="recycle.html">
+              <li><i class="fa-solid fa-sort"></i>Renditja</li>
+            </a>
+            <a href="#">
+              <li class="active">
+                <i class="fa-regular fa-circle-check"></i>Përpunimi
+              </li>
+            </a>
+            <a href="recycle-account.html">
+              <li><i class="fa-solid fa-user my-account"></i>Llogaria ime</li>
+            </a>
+            <a href="recycling-tools.html">
+              <li><i class="fa-solid fa-screwdriver-wrench"></i>Mjetet</li>
+            </a>
+            <a href="recycle-login.html">
+              <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+            </a>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+         <div class="loading-scene">
+            <div class="loading"></div>
+            <h2>Prisni deri sa ekipni ynë të vij tek adresa juaj per ta recikluar produktin</h2>
+         </div>
+
+         <div class="bg-white">
+            <div class="qr-code">
+                <img src="./imgs/qr-code.jpg" alt="Qr Code">
+
+                <h3>Skano per terhekjen e parave</h3>
+            </div>
+         </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
