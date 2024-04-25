@@ -224,11 +224,11 @@
   height: 400px;
 }
 
-.get-in-touch .container .row .col:first-child .text-center > h2 {
+.get-in-touch .container .row .col:first-child .text-center>h2 {
   color: #1e4840;
 }
 
-.get-in-touch .container .row .col:first-child .text-center > h1 {
+.get-in-touch .container .row .col:first-child .text-center>h1 {
   font-size: 30px;
   color: #1e4840;
   margin: 20px 0px;
@@ -284,9 +284,18 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   .stats .container .rows .row:first-child,
   .our-team .container .row {
     flex-direction: column;
+  }
+
+  .stats .container .rows .row:last-child {
+    flex-direction: column;
+  }
+
+  .stats .container .rows .row:last-child .col {
+    margin: 20px 0px;
   }
 
   .stats .container .rows .row:last-child .col h1 {
@@ -306,19 +315,19 @@
     text-align: center;
   }
 
-  .get-in-touch .container .row .col:first-child .text-center > h1 {
+  .get-in-touch .container .row .col:first-child .text-center>h1 {
     font-size: 18px;
   }
 
-    .get-in-touch .container .row .col:first-child .text-center>h2 {
-      font-size: 12px;
-    }
+  .get-in-touch .container .row .col:first-child .text-center>h2 {
+    font-size: 12px;
+  }
 
   .get-in-touch .container .row .col:last-child {
     background: none;
   }
 
-    .get-in-touch .container .row {
-      column-gap: 20px;
-    }
+  .get-in-touch .container .row {
+    column-gap: 20px;
+  }
 }

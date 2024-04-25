@@ -1,0 +1,346 @@
+/* Billing Details */
+.billing-details {
+    margin: 50px auto;
+    width: 85%;
+}
+
+.billing-details .container h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.billing-details .container .row {
+    display: flex;
+    column-gap: 200px;
+}
+
+.billing-details .container .row .col {
+    flex-basis: 50%;
+}
+
+.billing-details .container .row .col:first-child .field {
+    margin: 20px 0px;
+}
+
+.billing-details .container .row .col:first-child .field label {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 8px 0px;
+}
+
+.billing-details .container .row .col:first-child .field label>span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #81a969;
+}
+
+.billing-details .container .row .col:first-child .field input {
+    width: 100%;
+    padding: 20px 10px;
+    background: #F5F5F5;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Customize the label (the container) */
+.billing-details .container .row .col:first-child .save-payment {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.billing-details .container .row .col:first-child .save-payment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.billing-details .container .row .col:first-child .checkmark {
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.billing-details .container .row .col:first-child .save-payment:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.billing-details .container .row .col:first-child .save-payment input:checked~.checkmark {
+    background-color: #db4444;
+    color: #F5F5F5;
+}
+
+.billing-details .container .row .col:first-child .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.billing-details .container .row .col:first-child .save-payment input:checked~.checkmark:after {
+    display: block;
+}
+
+.billing-details .container .row .col:first-child .save-payment .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Last Child */
+.billing-details .container .row .col:last-child .product-and-price {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.billing-details .container .row .col:last-child .product-and-price .product-img {
+    display: flex;
+    align-items: center;
+}
+
+.billing-details .container .row .col:last-child .product-and-price .product-img img {
+    width: 50px;
+    object-fit: cover;
+    margin: 0px 20px 0px 0px;
+}
+
+.billing-details .container .row .col:last-child .product-and-price .product-img h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/*  */
+.billing-details .container .row .col:last-child .estimates {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.billing-details .container .row .col:last-child .estimates:last-child {
+    border-bottom: none;
+}
+
+.billing-details .container .row .col:last-child .estimates .title {
+    display: flex;
+    align-items: center;
+}
+
+
+.billing-details .container .row .col:last-child .estimates .title h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.billing-details .container .row .col:last-child .banks {
+    display: flex;
+    width: 80%;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs {
+    flex-basis: 50%;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs .radio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs .radio-container .field {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs .radio-container .field input {
+    accent-color: #000;
+    width: 25px;
+    height: 25px;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs .radio-container .field label {
+    margin-left: 15px;
+}
+
+.billing-details .container .row .col:last-child .banks .inputs .billing-details .container .row .col:last-child .banks .bank-icons {
+    flex-basis: 50%;
+}
+
+.billing-details .container .row .col:last-child .banks .bank-icons {
+    margin: 15px 0px;
+}
+
+.billing-details .container .row .col:last-child .cupon {
+    margin: 20px 0px;
+}
+
+.billing-details .container .row .col:last-child .cupon input {
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: none;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.billing-details .container .row .col:last-child .cupon input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.billing-details .container .row .col:last-child .cupon button {
+    background: #81a969;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 0px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.billing-details .container .row .col:last-child .cupon button a {
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+
+.billing-details .container .row .col:last-child button {
+    background: #81a969;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 0px;
+    border-radius: 4px;
+    margin: 5px 0px;
+}
+
+.billing-details .container .row .col:last-child button a {
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+
+.order-confirmed .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order-confirmed .container img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.order-confirmed .container a {
+    background: #81a969;
+    border-radius: 4px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0px;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FAFAFA;
+    transition: all .4s ease-in-out;
+}
+
+.order-confirmed .container a:hover {
+    background-color: #fff;
+    border: 1px solid #81a969;
+    color: #81a969;
+}
+
+@media only screen and (max-width: 768px) {
+    .billing-details .container .row {
+        flex-direction: column;
+        column-gap: 15px;
+    }
+
+    .billing-details .container .row .col:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .billing-details .container .row .col:last-child .cupon {
+        width: 80%;
+    }
+
+    .billing-details .container .row .col:last-child .cupon input {
+        width: 100%;
+    }
+
+    .billing-details .container .row .col:last-child .cupon button {
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+}

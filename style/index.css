@@ -457,7 +457,7 @@ button {
   justify-content: center;
   align-items: center;
   background-color: #81a969;
-  padding: 12px 50px;
+  padding: 9.5px 48px;
   border-top-right-radius: 100vmax;
   border-bottom-right-radius: 100vmax;
   cursor: pointer;
@@ -478,7 +478,6 @@ button {
   color: #fff;
   font-weight: 700;
   font-size: 22px;
-  font-family: "Anybody", cursive;
 }
 
 /* Download Section */
@@ -631,6 +630,21 @@ footer .container .row .col ul li a {
 
   .subscribe {
     margin: 0px;
+  }
+
+  .subscribe .container .field {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .subscribe .container>p {
+    font-size: 16px;
+    max-width: 95% !important;
+  }
+
+  .subscribe .container h1 {
+    font-size: 30px;
+    max-width: 95% !important;
   }
 
   .keep-nature-clean .row .col .text,

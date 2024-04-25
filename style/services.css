@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .hero-banner .container .row {
   width: 85%;
   margin: 50px auto;
@@ -24,7 +28,17 @@
   margin: 30px 0px;
 }
 
-.hero-banner .container .row .col>button {
+
+.hero-banner .container .row .col>a:hover {
+  background-color: #81a969;
+  color: #fff;
+}
+
+.hero-banner .container .row .col a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #81a969;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,21 +49,7 @@
   background: none;
   cursor: pointer;
   transition: all .3s ease-in-out;
-}
-
-.hero-banner .container .row .col>button:hover a {
-  color: #fff;
-}
-
-.hero-banner .container .row .col>button:hover {
-  background-color: #81a969;
-}
-
-.hero-banner .container .row .col>button>a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #81a969;
-  font-weight: 400;
+  width: max-content;
 }
 
 .hero-banner .container .row .col .main-img {
@@ -192,6 +192,16 @@
   border-radius: 100vmax;
   font-size: 16px;
   margin: 20px 0px;
+  transition: all .3s ease-in-out;
+}
+
+.our-plans .container .plans .basic button:hover {
+  background: none;
+  border: 1px solid #e98d83;
+}
+
+.our-plans .container .plans .basic button:hover a{
+  color: #e98d83;
 }
 
 .our-plans .container .plans .basic button>a {
@@ -240,12 +250,22 @@
   border-radius: 100vmax;
   font-size: 16px;
   margin: 20px 0px;
+  transition: all .3s ease-in-out;
 }
 
 .our-plans .container .plans .pro button>a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+}
+
+.our-plans .container .plans .pro button:hover {
+  background: none;
+  border: 1px solid #6cb094;
+}
+
+.our-plans .container .plans .pro button:hover a {
+  color: #6cb094;
 }
 
 /* OUR TESTIMONIALS */

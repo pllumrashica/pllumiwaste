@@ -1,3 +1,7 @@
+main .side-bar {
+  z-index: 10;
+}
+
 main .content .container {
   padding: 0px 40px 40px 40px;
 }
@@ -314,7 +318,7 @@ main .container .payments-checkout .checkout .pay-now a {
 }
 
 .payment-sucess {
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   background-color: #fff;
   width: 0;
