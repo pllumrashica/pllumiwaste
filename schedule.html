@@ -1,388 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/schedule.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <title>E-Waste | Orari</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style/header.css">
-  <link rel="stylesheet" href="./style/fonts.css">
-  <link rel="stylesheet" href="./style/dashboard.css">
-  <link rel="stylesheet" href="./style/schedule.css">
-  <link rel="stylesheet" href="./style/footer.css">
-  <title>Pllumi Waste | Orari</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
-      </div>
-
-      <div class="bell">
-        <div class="bell-notify"></div>
-        <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
-          <span class="popuptext" id="myPopup">
-            <ul>
-              <li>
-                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni faturën</a></h1>
-              </li>
-
-              <li>
-                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
-              </li>
-            </ul>
-          </span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="mobile-side-bar">
-      <div class="fixed">
-        <div class="col">
-          <a href="dashboard.html">
-            <i class="fa-solid fa-house"></i>
-          </a>
-        </div>
-    
-        <div class="col mobile-active">
-          <a href="schedule.html">
-            <i class="fa-solid fa-clock"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="payments.html">
-            <i class="fa-solid fa-money-bill-wave"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="settings.html">
-            <i class="fa-solid fa-gear"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="login.html">
-            <i class="fa-solid fa-right-from-bracket"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <section class="side-bar">
+  <body>
+    <header>
       <div class="container">
-        <ul>
-          <a href="dashboard.html">
-            <li><i class="fa-solid fa-house"></i>Kryefaqja</li>
-          </a>
-          <a href="#">
-            <li class="active"><i class="fa-solid fa-clock"></i>Orari</li>
-          </a>
-          <a href="payments.html">
-            <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
-          </a>
-          <a href="settings.html">
-            <li><i class="fa-solid fa-gear"></i>Cilësimet</li>
-          </a>
-          <a href="login.html">
-            <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
-          </a>
-        </ul>
-      </div>
-    </section>
+        <div class="logo">
+          <a href="#"
+            ><img src="./imgs/e-waste-logo.png" alt="E-Waste Logo"
+          /></a>
+        </div>
 
-    <section class="content">
-      <div class="container">
-        <h4>Orari Vjetor per marrjen e mbeturinave</h4>
+        <div class="bell">
+          <div class="bell-notify"></div>
+          <div class="popup" onclick="myFunction()">
+            <i class="fa-solid fa-bell"></i>
+            <span class="popuptext" id="myPopup">
+              <ul>
+                <li>
+                  <h1>
+                    Ju nuk keni paguar faturen tuaj qe 6 ditë.
+                    <a href="payments.html">Shikoni faturën</a>
+                  </h1>
+                </li>
 
-        <div class="date-time">
-          <div class="date">
-            <section class="schedule">
-              <input type="month" id="start" name="start" value="2023-06" max="2023-12" min="2023-01">
-            </section>
-
-            <section class="calendar">
-              <div class="weeks">
-                <div class="col"><strong>E Hene</strong></div>
-                <div class="col"><strong>E Marte</strong></div>
-                <div class="col"><strong>E Merkure</strong></div>
-                <div class="col"><strong>E Enjte</strong></div>
-                <div class="col"><strong>E Premte</strong></div>
-                <div class="col"><strong>E Shtune</strong></div>
-                <div class="col"><strong>E Diel</strong></div>
-              </div>
-
-              <div class="days">
-                <div class="col">
-                  <div class="day"></div>
-                </div>
-
-                <div class="col">
-                  <div class="day"></div>
-                </div>
-
-                <div class="col">
-                  <div class="day"></div>
-                </div>
-
-                <div class="col">
-                  <div class="day">1</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">2</div>
-                </div>
-
-                <div class="col">
-                  <div class="day active">3</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">4</div>
-                </div>
-              </div>
-
-              <div class="days">
-                <div class="col">
-                  <div class="day">5</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">6</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">7</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">8</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">9</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">10</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">11</div>
-                </div>
-              </div>
-
-              <div class="days">
-                <div class="col">
-                  <div class="day">12</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">13</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">14</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">15</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">16</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">17</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">18</div>
-                </div>
-              </div>
-
-              <div class="days">
-                <div class="col">
-                  <div class="day">19</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">20</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">21</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">22</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">23</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">24</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">25</div>
-                </div>
-              </div>
-
-              <div class="days">
-                <div class="col">
-                  <div class="day">26</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">27</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">28</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">29</div>
-                </div>
-
-                <div class="col">
-                  <div class="day">30</div>
-                </div>
-
-                <div class="col">
-                  <div class="day"></div>
-                </div>
-
-                <div class="col">
-                  <div class="day"></div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="time">
-            <h6>E Shtune,3 Qeshori</h6>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">9:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">9:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">10:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">10:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">11:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">11:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">12:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">12:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">13:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button active">13:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">14:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">14:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">15:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">15:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-                <div class="button">16:00</div>
-              </div>
-
-              <div class="col">
-                <div class="button">16:30</div>
-              </div>
-            </div>
-
-            <div class="time-set">
-              <div class="col">
-              </div>
-
-              <div class="col">
-                <div class="button">17:00</div>
-              </div>
-            </div>
-
-            <div class="confirm-btn">
-              <button><a href="#">Konfirmo</a></button>
-            </div>
+                <li>
+                  <h1>
+                    Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50
+                  </h1>
+                </li>
+              </ul>
+            </span>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </header>
 
+    <main>
+      <div class="mobile-side-bar">
+        <div class="fixed">
+          <div class="col">
+            <a href="dashboard.html">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </div>
 
-  <script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-  </script>
-</body>
+          <div class="col mobile-active">
+            <a href="schedule.html">
+              <i class="fa-solid fa-clock"></i>
+            </a>
+          </div>
 
+          <div class="col">
+            <a href="payments.html">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="login.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="side-bar">
+        <div class="container">
+          <ul>
+            <a href="dashboard.html">
+              <li><i class="fa-solid fa-house"></i>Kryefaqja</li>
+            </a>
+            <a href="#">
+              <li class="active"><i class="fa-solid fa-clock"></i>Orari</li>
+            </a>
+            <a href="payments.html">
+              <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
+            </a>
+            <a href="settings.html">
+              <li><i class="fa-solid fa-gear"></i>Cilësimet</li>
+            </a>
+            <a href="login.html">
+              <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+            </a>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <h4>Orari Vjetor per marrjen e mbeturinave</h4>
+
+          <div class="date-time">
+            <div class="date">
+              <section class="schedule">
+                <input
+                  type="month"
+                  id="start"
+                  name="start"
+                  value="2023-06"
+                  max="2023-12"
+                  min="2023-01"
+                />
+              </section>
+
+              <section class="calendar">
+                <div class="weeks">
+                  <div class="col"><strong>E Hene</strong></div>
+                  <div class="col"><strong>E Marte</strong></div>
+                  <div class="col"><strong>E Merkure</strong></div>
+                  <div class="col"><strong>E Enjte</strong></div>
+                  <div class="col"><strong>E Premte</strong></div>
+                  <div class="col"><strong>E Shtune</strong></div>
+                  <div class="col"><strong>E Diel</strong></div>
+                </div>
+
+                <div class="days">
+                  <div class="col">
+                    <div class="day"></div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day"></div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day"></div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">1</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">2</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day active">3</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">4</div>
+                  </div>
+                </div>
+
+                <div class="days">
+                  <div class="col">
+                    <div class="day">5</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">6</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">7</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">8</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">9</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">10</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">11</div>
+                  </div>
+                </div>
+
+                <div class="days">
+                  <div class="col">
+                    <div class="day">12</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">13</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">14</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">15</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">16</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">17</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">18</div>
+                  </div>
+                </div>
+
+                <div class="days">
+                  <div class="col">
+                    <div class="day">19</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">20</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">21</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">22</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">23</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">24</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">25</div>
+                  </div>
+                </div>
+
+                <div class="days">
+                  <div class="col">
+                    <div class="day">26</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">27</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">28</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">29</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day">30</div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day"></div>
+                  </div>
+
+                  <div class="col">
+                    <div class="day"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="time">
+              <h6>E Shtune,3 Qeshori</h6>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">9:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">9:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">10:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">10:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">11:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">11:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">12:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">12:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">13:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button active">13:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">14:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">14:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">15:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">15:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col">
+                  <div class="button">16:00</div>
+                </div>
+
+                <div class="col">
+                  <div class="button">16:30</div>
+                </div>
+              </div>
+
+              <div class="time-set">
+                <div class="col"></div>
+
+                <div class="col">
+                  <div class="button">17:00</div>
+                </div>
+              </div>
+
+              <div class="confirm-btn">
+                <button><a href="#">Konfirmo</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>

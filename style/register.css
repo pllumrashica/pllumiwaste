@@ -1,0 +1,19 @@
+.login {
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+
+.login .container form .field .field-gender {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin: 5px 0px;
+}
+.login .container form .field .field-gender input[type="radio"] {
+  width: auto;
+}
+
+header {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}

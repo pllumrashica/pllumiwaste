@@ -1,181 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <title>eEcoKos | Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style/header.css">
-  <link rel="stylesheet" href="./style/fonts.css">
-  <link rel="stylesheet" href="./style/dashboard.css">
-  <link rel="stylesheet" href="./style/footer.css">
-  <title>Pllumi Waste | Dashboard</title>
-</head>
-
-<body>
-  <div class="loader">
-    <img src="./imgs/Pllumi-Waste-Logo-Black-White.png" alt="Pllumi Waste Logo">
-  </div>
-
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
-      </div>
-
-      <div class="bell">
-        <div class="bell-notify"></div>
-        <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
-          <span class="popuptext" id="myPopup">
-            <ul>
-              <li>
-                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni faturën</a></h1>
-              </li>
-
-              <li>
-                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
-              </li>
-            </ul>
-          </span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="mobile-side-bar">
-      <div class="fixed">
-        <div class="col mobile-active">
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="schedule.html">
-            <i class="fa-solid fa-clock"></i>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="payments.html">
-            <i class="fa-solid fa-money-bill-wave"></i>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="settings.html">
-            <i class="fa-solid fa-gear"></i>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="login.html">
-            <i class="fa-solid fa-right-from-bracket"></i>
-          </a>
-        </div>
-      </div>
+  <body>
+    <div class="loader">
+      <img src="./imgs/e-waste-logo-black-white.png" alt="Pllumi Waste Logo" />
     </div>
 
-    <section class="side-bar">
+    <header>
       <div class="container">
-        <ul>
-          <a href="#">
-            <li class="active"><i class="fa-solid fa-house"></i>Kryefaqja</li>
-          </a>
-          <a href="schedule.html">
-            <li><i class="fa-solid fa-clock"></i>Orari</li>
-          </a>
-          <a href="payments.html">
-            <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
-          </a>
-          <a href="settings.html">
-            <li><i class="fa-solid fa-gear"></i>Cilësimet</li>
-          </a>
-          <a href="login.html">
-            <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
-          </a>
-        </ul>
+        <div class="logo">
+          <a href="#"
+            ><img src="./imgs/e-waste-logo.png" alt="Pllumi Waste Logo"
+          /></a>
+        </div>
+
+        <div class="bell">
+          <div class="bell-notify"></div>
+          <div class="popup" onclick="myFunction()">
+            <i class="fa-solid fa-bell"></i>
+            <span class="popuptext" id="myPopup">
+              <ul>
+                <li>
+                  <h1>
+                    Ju nuk keni paguar faturen tuaj qe 6 ditë.
+                    <a href="payments.html">Shikoni faturën</a>
+                  </h1>
+                </li>
+
+                <li>
+                  <h1>
+                    Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50
+                  </h1>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <section class="content">
-      <div class="container">
-        <h1 class="name">Përshendetje Pëllumb,</h1>
-        <p class="about-waste">Si mund t'i menaxhojmë mbeturinat tuaja?</p>
-
-        <h3>Be kerkes per me ta marr berrllogun n'derë</h3>
-
-        <div class="row">
-          <div class="col">
-            <p>Orari dhe marrja e mbeturinave derë më derë ofrohet tani për përdoruesit premium.</p>
-
-            <button><a href="#">Kërkesë</a></button>
+    <main>
+      <div class="mobile-side-bar">
+        <div class="fixed">
+          <div class="col mobile-active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+            </a>
           </div>
 
           <div class="col">
-            <img src="./imgs/garbage-truck.png" alt="Garbage Truck">
+            <a href="schedule.html">
+              <i class="fa-solid fa-clock"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="payments.html">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="login.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
           </div>
         </div>
-
-        <section class="quick-actions">
-          <h4>Veprimet e shpejta</h4>
-
-          <div class="main-row">
-            <div class="col">
-              <a href="schedule.html">
-                <div class="icon">
-                  <img src="./imgs/schedule-icon.png" alt="">
-                </div>
-              </a>
-
-              <h5>Programoni marrjen</h5>
-            </div>
-
-            <div class="col">
-              <a href="recycle.html">
-                <div class="icon">
-                  <img src="./imgs/earn-reward-icon.png" alt="Earn Reward Icon">
-                </div>
-              </a>
-
-              <h5>Fito Shpërblim</h5>
-            </div>
-
-            <div class="col">
-              <a href="payments.html">
-                <div class="icon">
-                  <img src="./imgs/payments-icon.png" alt="Payments Icon">
-                </div>
-              </a>
-
-              <h5>Paguaj</h5>
-            </div>
-          </div>
-        </section>
-
-        <section class="closest-waste-point">
-          <h4>Pikat më të afërta të kontinjerëve të mbeturinave</h4>
-
-          <div class="map">
-            <img src="./imgs/waste-in-map.jpg" alt="Waste container in Map">
-          </div>
-        </section>
       </div>
-    </section>
-  </main>
 
-  <script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-  </script>
-</body>
+      <section class="side-bar">
+        <div class="container">
+          <ul>
+            <a href="#">
+              <li class="active"><i class="fa-solid fa-house"></i>Kryefaqja</li>
+            </a>
+            <a href="schedule.html">
+              <li><i class="fa-solid fa-clock"></i>Orari</li>
+            </a>
+            <a href="payments.html">
+              <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
+            </a>
+            <a href="settings.html">
+              <li><i class="fa-solid fa-gear"></i>Cilësimet</li>
+            </a>
+            <a href="login.html">
+              <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+            </a>
+          </ul>
+        </div>
+      </section>
 
+      <section class="content">
+        <div class="container">
+          <h1 class="name">Përshendetje Pëllumb,</h1>
+          <p class="about-waste">Si mund t'i menaxhojmë mbeturinat tuaja?</p>
+
+          <h3>Be kerkes per me ta marr berrllogun n'derë</h3>
+
+          <div class="row">
+            <div class="col">
+              <p>
+                Orari dhe marrja e mbeturinave derë më derë ofrohet tani për
+                përdoruesit premium.
+              </p>
+
+              <button><a href="#">Kërkesë</a></button>
+            </div>
+
+            <div class="col">
+              <img src="./imgs/garbage-truck.png" alt="Garbage Truck" />
+            </div>
+          </div>
+
+          <section class="quick-actions">
+            <h4>Veprimet e shpejta</h4>
+
+            <div class="main-row">
+              <div class="col">
+                <a href="schedule.html">
+                  <div class="icon">
+                    <img src="./imgs/schedule-icon.png" alt="" />
+                  </div>
+                </a>
+
+                <h5>Programoni marrjen</h5>
+              </div>
+
+              <div class="col">
+                <a href="recycle.html">
+                  <div class="icon">
+                    <img
+                      src="./imgs/earn-reward-icon.png"
+                      alt="Earn Reward Icon"
+                    />
+                  </div>
+                </a>
+
+                <h5>Fito Shpërblim</h5>
+              </div>
+
+              <div class="col">
+                <a href="payments.html">
+                  <div class="icon">
+                    <img src="./imgs/payments-icon.png" alt="Payments Icon" />
+                  </div>
+                </a>
+
+                <h5>Paguaj</h5>
+              </div>
+            </div>
+          </section>
+
+          <section class="closest-waste-point">
+            <h4>Pikat më të afërta të kontinjerëve të mbeturinave</h4>
+
+            <div class="map">
+              <img src="./imgs/waste-in-map.jpg" alt="Waste container in Map" />
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>

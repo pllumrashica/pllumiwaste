@@ -3,7 +3,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 body {
   background-color: #fff;
 }
@@ -58,7 +57,7 @@ p {
   font-family: "Epilogue", sans-serif;
 }
 
-.hero-banner .container-hb>p {
+.hero-banner .container-hb > p {
   margin-top: 40px;
   font-size: 20px;
   text-align: center;
@@ -116,7 +115,7 @@ p {
   text-decoration: none;
 }
 
-.hero-banner .container-hb header .container .logo a>img {
+.hero-banner .container-hb header .container .logo a > img {
   width: 100%;
 }
 
@@ -131,7 +130,7 @@ p {
   cursor: pointer;
 }
 
-.hero-banner .container-hb header .container ul.nav-items li.active>a {
+.hero-banner .container-hb header .container ul.nav-items li.active > a {
   color: #81a969;
 }
 
@@ -149,7 +148,7 @@ p {
   transition: 0.1s ease-in-out;
 }
 
-.hero-banner .container-hb header .container ul.nav-items li:hover>a {
+.hero-banner .container-hb header .container ul.nav-items li:hover > a {
   color: #81a969;
   transition: 0.1s ease-in-out;
 }
@@ -172,7 +171,7 @@ p {
   overflow: hidden;
 }
 
-.hero-banner .container-hb header .container .buttons button:first-child>a {
+.hero-banner .container-hb header .container .buttons button:first-child > a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
@@ -182,7 +181,14 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-.hero-banner .container-hb header .container .buttons button:first-child>a>i {
+.hero-banner
+  .container-hb
+  header
+  .container
+  .buttons
+  button:first-child
+  > a
+  > i {
   margin-right: 6px;
 }
 
@@ -218,7 +224,7 @@ p {
   overflow: hidden;
 }
 
-.hero-banner .container-hb header .container .buttons button:last-child>a {
+.hero-banner .container-hb header .container .buttons button:last-child > a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
@@ -228,7 +234,14 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-.hero-banner .container-hb header .container .buttons button:last-child>a>i {
+.hero-banner
+  .container-hb
+  header
+  .container
+  .buttons
+  button:last-child
+  > a
+  > i {
   margin-right: 6px;
 }
 
@@ -333,8 +346,6 @@ p {
   margin: 25px auto;
 }
 
-
-
 .keep-nature-clean .row .col .row-inside .description {
   flex-basis: 90%;
 }
@@ -405,7 +416,7 @@ button {
   font-family: "Epilogue", sans-serif;
 }
 
-.subscribe .container>p {
+.subscribe .container > p {
   margin-top: 40px;
   font-size: 18px;
   text-align: center;
@@ -604,8 +615,7 @@ footer .container .row .col ul li a {
 
 /* Mobile Responsive */
 
-@media only screen and (max-width:767px) {
-
+@media only screen and (max-width: 767px) {
   .keep-nature-clean .row,
   .download .container .row {
     flex-direction: column;
@@ -633,4 +643,26 @@ footer .container .row .col ul li a {
     margin-bottom: 20px;
   }
 
+  .hero-banner .container-hb h1,
+  .subscribe .container h1,
+  .download .container .row .col h1 {
+    font-size: 40px;
+    max-width: 90%;
+  }
+
+  .hero-banner .container-hb > p,
+  .subscribe .container > p,
+  .download .container .row .col p {
+    max-width: 90%;
+    font-size: 18px;
+  }
+
+  .subscribe,
+  .subscribe .container {
+    height: 900px;
+  }
+
+  .download .container .row .col:first-child {
+    padding: 20px 0;
+  }
 }

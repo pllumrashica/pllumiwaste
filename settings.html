@@ -1,460 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/settings.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <title>E-Waste | Cilësimet</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./imgs/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style/header.css">
-  <link rel="stylesheet" href="./style/fonts.css">
-  <link rel="stylesheet" href="./style/dashboard.css">
-  <link rel="stylesheet" href="./style/settings.css">
-  <link rel="stylesheet" href="./style/footer.css">
-  <title>Pllumi Waste | Cilësimet</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#"><img src="./imgs/Pllumi-Waste-Logo.png" alt="Pllumi Waste Logo"></a>
-      </div>
-
-      <div class="bell">
-        <div class="bell-notify"></div>
-        <div class="popup" onclick="myFunction()"><i class="fa-solid fa-bell"></i>
-          <span class="popuptext" id="myPopup">
-            <ul>
-              <li>
-                <h1>Ju nuk keni paguar faturen tuaj qe 6 ditë. <a href="payments.html">Shikoni faturën</a></h1>
-              </li>
-
-              <li>
-                <h1>Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50</h1>
-              </li>
-            </ul>
-          </span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="mobile-side-bar">
-      <div class="fixed">
-        <div class="col">
-          <a href="dashboard.html">
-            <i class="fa-solid fa-house"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="schedule.html">
-            <i class="fa-solid fa-clock"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="payments.html">
-            <i class="fa-solid fa-money-bill-wave"></i>
-          </a>
-        </div>
-    
-        <div class="col mobile-active">
-          <a href="settings.html">
-            <i class="fa-solid fa-gear"></i>
-          </a>
-        </div>
-    
-        <div class="col">
-          <a href="login.html">
-            <i class="fa-solid fa-right-from-bracket"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    
-    <section class="side-bar">
+  <body>
+    <header>
       <div class="container">
-        <ul>
-          <a href="dashboard.html">
-            <li><i class="fa-solid fa-house"></i>Kryefaqja</li>
-          </a>
-          <a href="schedule.html">
-            <li><i class="fa-solid fa-clock"></i>Orari</li>
-          </a>
-          <a href="payments.html">
-            <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
-          </a>
-          <a href="#">
-            <li class="active"><i class="fa-solid fa-gear"></i>Cilësimet</li>
-          </a>
-          <a href="login.html">
-            <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
-          </a>
-        </ul>
+        <div class="logo">
+          <a href="#"
+            ><img src="./imgs/e-waste-logo.png" alt="E Waste Logo"
+          /></a>
+        </div>
+
+        <div class="bell">
+          <div class="bell-notify"></div>
+          <div class="popup" onclick="myFunction()">
+            <i class="fa-solid fa-bell"></i>
+            <span class="popuptext" id="myPopup">
+              <ul>
+                <li>
+                  <h1>
+                    Ju nuk keni paguar faturen tuaj qe 6 ditë.
+                    <a href="payments.html">Shikoni faturën</a>
+                  </h1>
+                </li>
+
+                <li>
+                  <h1>
+                    Ju keni paguar me sukëses per muajin Maj,në vlerë &euro;4.50
+                  </h1>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <section class="content">
-      <div class="container">
-        <h2>Cilësimet e llogarisë</h2>
-
-        <div class="account-settings">
-          <div class="settings-nav">
-            <ul>
-              <li><a href="#" class="active"><i class="fa-solid fa-user"></i>Llogaria ime</a></li>
-              <li><a href="#security"><i class="fa-solid fa-lock"></i>Siguria</a></li>
-              <li><a href="#notification"><i class="fa-solid fa-bell"></i>Njoftimet</a></li>
-              <li><a href="#billing"><i class="fa-solid fa-money-bill"></i>Faturimi</a></li>
-            </ul>
+    <main>
+      <div class="mobile-side-bar">
+        <div class="fixed">
+          <div class="col">
+            <a href="dashboard.html">
+              <i class="fa-solid fa-house"></i>
+            </a>
           </div>
 
-          <div class="settings">
-            <h2 class="section-title">Profili Imë</h2>
+          <div class="col">
+            <a href="schedule.html">
+              <i class="fa-solid fa-clock"></i>
+            </a>
+          </div>
 
-            <div class="account-details">
-              <div class="profile">
-                <div class="profile-picture">
-                  <img src="./imgs/Pllumrashica.jpg" alt="">
-                </div>
+          <div class="col">
+            <a href="payments.html">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </a>
+          </div>
 
-                <div class="profile-info">
-                  <h2 class="profile-name">Pëllumb Rashica</h2>
+          <div class="col mobile-active">
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
 
-                  <span class="country">Vushtrri,Kosova</span>
-                </div>
-              </div>
+          <div class="col">
+            <a href="login.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-              <div class="edit">
-                <a href="#">
-                  <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
-                </a>
-              </div>
+      <section class="side-bar">
+        <div class="container">
+          <ul>
+            <a href="dashboard.html">
+              <li><i class="fa-solid fa-house"></i>Kryefaqja</li>
+            </a>
+            <a href="schedule.html">
+              <li><i class="fa-solid fa-clock"></i>Orari</li>
+            </a>
+            <a href="payments.html">
+              <li><i class="fa-solid fa-money-bill-wave"></i>Pagesat</li>
+            </a>
+            <a href="#">
+              <li class="active"><i class="fa-solid fa-gear"></i>Cilësimet</li>
+            </a>
+            <a href="login.html">
+              <li><i class="fa-solid fa-right-from-bracket"></i>Dil</li>
+            </a>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <h2>Cilësimet e llogarisë</h2>
+
+          <div class="account-settings">
+            <div class="settings-nav">
+              <ul>
+                <li>
+                  <a href="#" class="active"
+                    ><i class="fa-solid fa-user"></i>Llogaria ime</a
+                  >
+                </li>
+                <li>
+                  <a href="#security"
+                    ><i class="fa-solid fa-lock"></i>Siguria</a
+                  >
+                </li>
+                <li>
+                  <a href="#notification"
+                    ><i class="fa-solid fa-bell"></i>Njoftimet</a
+                  >
+                </li>
+                <li>
+                  <a href="#billing"
+                    ><i class="fa-solid fa-money-bill"></i>Faturimi</a
+                  >
+                </li>
+              </ul>
             </div>
 
+            <div class="settings">
+              <h2 class="section-title">Profili Imë</h2>
 
-            <div class="personal-information">
-              <div class="title">
-                <h2 class="section-title">Informata personale</h2>
-
-                <a href="#">
-                  <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
-                </a>
-              </div>
-
-              <div class="information">
-                <div class="col">
-                  <div class="field">
-                    <h4 class="info">Emri</h4>
-
-                    <h4 class="info-about">Pëllumb</h4>
+              <div class="account-details">
+                <div class="profile">
+                  <div class="profile-picture">
+                    <img src="./imgs/profile-default-icon.jpg" alt="" />
                   </div>
 
-                  <div class="field">
-                    <h4 class="info">Email Adresa</h4>
+                  <div class="profile-info">
+                    <h2 class="profile-name" id="profileName"></h2>
 
-                    <h4 class="info-about">pellumbrashica1@gmail.com</h4>
+                    <span class="country">Vushtrri,Kosova</span>
                   </div>
                 </div>
 
-                <div class="col">
-                  <div class="field">
-                    <h4 class="info">Mbiemri</h4>
-
-                    <h4 class="info-about">Rashica</h4>
-                  </div>
-
-                  <div class="field">
-                    <h4 class="info">Numri i telefonit</h4>
-
-                    <h4 class="info-about">+383 (45) 123-123</h4>
-                  </div>
+                <div class="edit">
+                  <a href="#">
+                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div class="personal-information">
-              <div class="title">
-                <h2 class="section-title">Adresa</h2>
+              <div class="personal-information">
+                <div class="title">
+                  <h2 class="section-title">Informata personale</h2>
 
-                <a href="#">
-                  <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
-                </a>
-              </div>
-
-              <div class="information">
-                <div class="col">
-                  <div class="field">
-                    <h4 class="info">Shteti</h4>
-
-                    <h4 class="info-about">Kosovë</h4>
-                  </div>
-
-                  <div class="field">
-                    <h4 class="info">Kodi Postar</h4>
-
-                    <h4 class="info-about">42000</h4>
-                  </div>
+                  <a href="#">
+                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                  </a>
                 </div>
 
-                <div class="col">
-                  <div class="field">
-                    <h4 class="info">Qyteti</h4>
+                <div class="information">
+                  <div class="col">
+                    <div class="field">
+                      <h4 class="info">Emri</h4>
 
-                    <h4 class="info-about">Vushtrri</h4>
-                  </div>
-
-                  <div class="field">
-                    <h4 class="info">Numri i shtëpisë</h4>
-
-                    <h4 class="info-about">38</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="security" id="security">
-              <h2 class="section-title">Siguria</h2>
-
-              <h4>Rikthe Fjalkalimin</h4>
-              <label for="currentPassword">Fjalëkalimi aktual</label>
-              <input type="password" placeholder="Fjalkalimi aktual">
-
-              <label for="currentPassword">Fjalëkalimi i ri</label>
-              <input type="password" placeholder="Fjalëkalimi i ri">
-
-              <label for="currentPassword">Konfirmo fjalëkalimin i ri</label>
-              <input type="password" placeholder="Konfirmo fjalëkalimin i ri">
-
-              <a href="#">Perditso</a>
-            </div>
-
-            <div class="notification" id="notification">
-              <h2 class="section-title">Njoftimet</h2>
-
-              <div class="notification-title">
-                <ul>
-                  <li>
-                    <h4>Njoftim me email</h4>
-                  </li>
-                  <li>
-                    <p>Merr email për të zbuluar se çfarë po ndodh kur nuk je në linjë. Mund t'i çaktivizosh këto.</p>
-                  </li>
-                </ul>
-
-                <label class="switch">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-              </div>
-
-              <div class="notification-title">
-                <ul>
-                  <li>
-                    <h4>Lajmet dhe përditësimet</h4>
-                  </li>
-                  <li>
-                    <p>Lajme për kompaninë dhe përditësimet e ardhshme.</p>
-                  </li>
-                </ul>
-
-                <label class="switch">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-              </div>
-
-              <div class="notification-title">
-                <ul>
-                  <li>
-                    <h4>Njoftime shtytëse</h4>
-                  </li>
-                  <li>
-                    <p>Merr njoftime shtytëse në aplikacion për të zbuluar se çfarë po ndodh kur je në linjë.</p>
-                  </li>
-                </ul>
-
-                <label class="switch">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-              </div>
-
-              <div class="notification-title">
-                <ul>
-                  <li>
-                    <h4>Përkujtues</h4>
-                  </li>
-                  <li>
-                    <p>Këto janë njoftime për t'ju kujtuar përditësimet që mund të keni humbur.</p>
-                  </li>
-                </ul>
-
-                <label class="switch">
-                  <input type="checkbox" checked>
-                  <span class="slider round"></span>
-                </label>
-              </div>
-            </div>
-
-            <div class="billing" id="billing">
-              <h2 class="section-title">Faturimi</h2>
-
-              <p class="description">Menaxhoni planin tuaj dhe historikun e faturimit.</p>
-
-              <section class="our-plans">
-                <div class="container">
-                  <div class="plans">
-                    <div class="basic col">
-                      <h3 class="tag">Plani Bazë</h3>
-
-                      <ul>
-                        <li>
-                          <h4>Orari Grumbullimit</h4>
-
-                          <i class="fa-solid fa-check"></i>
-                        </li>
-
-                        <li>
-                          <h4>Teknologjia e avancuar e koshit</h4>
-
-                          <i class="fa-solid fa-check"></i>
-                        </li>
-
-                        <li>
-                          <h4>Rrjedhat shtesë të mbetjeve</h4>
-
-                          <i class="fa-solid fa-xmark"></i>
-                        </li>
-
-                        <li>
-                          <h4>Grumbullimi sipas kërkesës</h4>
-
-                          <i class="fa-solid fa-xmark"></i>
-                        </li>
-
-                        <li>
-                          <h4>Mbështetja dhe ndihma e klientit</h4>
-
-                          <i class="fa-solid fa-xmark"></i>
-                        </li>
-                      </ul>
-
+                      <h4 class="info-about">Pëllumb</h4>
                     </div>
 
-                    <div class="pro col">
-                      <div class="selected">
-                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <div class="field">
+                      <h4 class="info">Email Adresa</h4>
+
+                      <h4 class="info-about">pellumbrashica1@gmail.com</h4>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="field">
+                      <h4 class="info">Mbiemri</h4>
+
+                      <h4 class="info-about">Rashica</h4>
+                    </div>
+
+                    <div class="field">
+                      <h4 class="info">Numri i telefonit</h4>
+
+                      <h4 class="info-about">+383 (45) 123-123</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-information">
+                <div class="title">
+                  <h2 class="section-title">Adresa</h2>
+
+                  <a href="#">
+                    <h4>Redakto <i class="fa-solid fa-pen"></i></h4>
+                  </a>
+                </div>
+
+                <div class="information">
+                  <div class="col">
+                    <div class="field">
+                      <h4 class="info">Shteti</h4>
+
+                      <h4 class="info-about">Kosovë</h4>
+                    </div>
+
+                    <div class="field">
+                      <h4 class="info">Kodi Postar</h4>
+
+                      <h4 class="info-about">42000</h4>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="field">
+                      <h4 class="info">Qyteti</h4>
+
+                      <h4 class="info-about">Vushtrri</h4>
+                    </div>
+
+                    <div class="field">
+                      <h4 class="info">Numri i shtëpisë</h4>
+
+                      <h4 class="info-about">38</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="security" id="security">
+                <h2 class="section-title">Siguria</h2>
+
+                <h4>Rikthe Fjalkalimin</h4>
+                <label for="currentPassword">Fjalëkalimi aktual</label>
+                <input type="password" placeholder="Fjalkalimi aktual" />
+
+                <label for="currentPassword">Fjalëkalimi i ri</label>
+                <input type="password" placeholder="Fjalëkalimi i ri" />
+
+                <label for="currentPassword">Konfirmo fjalëkalimin i ri</label>
+                <input
+                  type="password"
+                  placeholder="Konfirmo fjalëkalimin i ri"
+                />
+
+                <a href="#">Perditso</a>
+              </div>
+
+              <div class="notification" id="notification">
+                <h2 class="section-title">Njoftimet</h2>
+
+                <div class="notification-title">
+                  <ul>
+                    <li>
+                      <h4>Njoftim me email</h4>
+                    </li>
+                    <li>
+                      <p>
+                        Merr email për të zbuluar se çfarë po ndodh kur nuk je
+                        në linjë. Mund t'i çaktivizosh këto.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+                <div class="notification-title">
+                  <ul>
+                    <li>
+                      <h4>Lajmet dhe përditësimet</h4>
+                    </li>
+                    <li>
+                      <p>Lajme për kompaninë dhe përditësimet e ardhshme.</p>
+                    </li>
+                  </ul>
+
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+                <div class="notification-title">
+                  <ul>
+                    <li>
+                      <h4>Njoftime shtytëse</h4>
+                    </li>
+                    <li>
+                      <p>
+                        Merr njoftime shtytëse në aplikacion për të zbuluar se
+                        çfarë po ndodh kur je në linjë.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+                <div class="notification-title">
+                  <ul>
+                    <li>
+                      <h4>Përkujtues</h4>
+                    </li>
+                    <li>
+                      <p>
+                        Këto janë njoftime për t'ju kujtuar përditësimet që mund
+                        të keni humbur.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="billing" id="billing">
+                <h2 class="section-title">Faturimi</h2>
+
+                <p class="description">
+                  Menaxhoni planin tuaj dhe historikun e faturimit.
+                </p>
+
+                <section class="our-plans">
+                  <div class="container">
+                    <div class="plans">
+                      <div class="basic col">
+                        <h3 class="tag">Plani Bazë</h3>
+
+                        <ul>
+                          <li>
+                            <h4>Orari Grumbullimit</h4>
+
+                            <i class="fa-solid fa-check"></i>
+                          </li>
+
+                          <li>
+                            <h4>Teknologjia e avancuar e koshit</h4>
+
+                            <i class="fa-solid fa-check"></i>
+                          </li>
+
+                          <li>
+                            <h4>Rrjedhat shtesë të mbetjeve</h4>
+
+                            <i class="fa-solid fa-xmark"></i>
+                          </li>
+
+                          <li>
+                            <h4>Grumbullimi sipas kërkesës</h4>
+
+                            <i class="fa-solid fa-xmark"></i>
+                          </li>
+
+                          <li>
+                            <h4>Mbështetja dhe ndihma e klientit</h4>
+
+                            <i class="fa-solid fa-xmark"></i>
+                          </li>
+                        </ul>
                       </div>
 
-                      <h3 class="tag">Plani Premium</h3>
+                      <div class="pro col">
+                        <div class="selected">
+                          <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        </div>
 
-                      <ul>
-                        <li>
-                          <h4>Orari Grumbullimit</h4>
+                        <h3 class="tag">Plani Premium</h3>
 
-                          <i class="fa-solid fa-check"></i>
-                        </li>
+                        <ul>
+                          <li>
+                            <h4>Orari Grumbullimit</h4>
 
-                        <li>
-                          <h4>Teknologjia e avancuar e koshit</h4>
+                            <i class="fa-solid fa-check"></i>
+                          </li>
 
-                          <i class="fa-solid fa-check"></i>
-                        </li>
+                          <li>
+                            <h4>Teknologjia e avancuar e koshit</h4>
 
-                        <li>
-                          <h4>Rrjedhat shtesë të mbetjeve</h4>
+                            <i class="fa-solid fa-check"></i>
+                          </li>
 
-                          <i class="fa-solid fa-check"></i>
-                        </li>
+                          <li>
+                            <h4>Rrjedhat shtesë të mbetjeve</h4>
 
-                        <li>
-                          <h4>Grumbullimi sipas kërkesës</h4>
+                            <i class="fa-solid fa-check"></i>
+                          </li>
 
-                          <i class="fa-solid fa-check"></i>
-                        </li>
+                          <li>
+                            <h4>Grumbullimi sipas kërkesës</h4>
 
-                        <li>
-                          <h4>Mbështetja dhe ndihma e klientit</h4>
+                            <i class="fa-solid fa-check"></i>
+                          </li>
 
-                          <i class="fa-solid fa-check"></i>
-                        </li>
-                      </ul>
+                          <li>
+                            <h4>Mbështetja dhe ndihma e klientit</h4>
+
+                            <i class="fa-solid fa-check"></i>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </section>
+                </section>
 
-              <h2 class="section-title">Historia e faturimit</h2>
+                <h2 class="section-title">Historia e faturimit</h2>
 
-              <p class="description">Qasuni në të gjitha faturat tuaja të mëparshme.</p>
-
-              <div class="invoice">
-                <div class="name">
-                  <input type="checkbox">
-                  <h5 class="billing-name">Faturë</h5>
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-
-                <div class="amount">
-                  <h5>Shuma</h5>
-                </div>
-              </div>
-
-              <div class="row-amount">
-                <div class="invoice">
-                  <div class="col">
-                    <input type="checkbox">
-                    <h3>Plani Premium - 19 Qershor</h3>
-                  </div>
-
-                  <div class="col">
-                    <h3 class="amount">9.99 &euro;</h3>
-                  </div>
-                </div>
+                <p class="description">
+                  Qasuni në të gjitha faturat tuaja të mëparshme.
+                </p>
 
                 <div class="invoice">
-                  <div class="col">
-                    <input type="checkbox">
-                    <h3>Plani Premium - 19 Maj</h3>
+                  <div class="name">
+                    <input type="checkbox" />
+                    <h5 class="billing-name">Faturë</h5>
+                    <i class="fa-solid fa-arrow-down"></i>
                   </div>
 
-                  <div class="col">
-                    <h3 class="amount">9.99 &euro;</h3>
+                  <div class="amount">
+                    <h5>Shuma</h5>
                   </div>
                 </div>
 
-                <div class="invoice">
-                  <div class="col">
-                    <input type="checkbox">
-                    <h3>Plani Premium - 19 Prill</h3>
+                <div class="row-amount">
+                  <div class="invoice">
+                    <div class="col">
+                      <input type="checkbox" />
+                      <h3>Plani Premium - 19 Qershor</h3>
+                    </div>
+
+                    <div class="col">
+                      <h3 class="amount">9.99 &euro;</h3>
+                    </div>
                   </div>
 
-                  <div class="col">
-                    <h3 class="amount">9.99 &euro;</h3>
+                  <div class="invoice">
+                    <div class="col">
+                      <input type="checkbox" />
+                      <h3>Plani Premium - 19 Maj</h3>
+                    </div>
+
+                    <div class="col">
+                      <h3 class="amount">9.99 &euro;</h3>
+                    </div>
+                  </div>
+
+                  <div class="invoice">
+                    <div class="col">
+                      <input type="checkbox" />
+                      <h3>Plani Premium - 19 Prill</h3>
+                    </div>
+
+                    <div class="col">
+                      <h3 class="amount">9.99 &euro;</h3>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <script>
-    // When the user clicks on <div>, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-  </script>
-</body>
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
 
+    <script src="./js/account-settings.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
 </html>
